@@ -110,3 +110,24 @@ console.log('Found User:', foundUser);
 const allActive = users.every((x)=>x.active === true);
 console.log('All Active:', allActive);
 
+
+// You are given:
+
+// const numbers = [40, 5, 100, 25, 10];
+
+// Sort numbers in ascending order
+
+// Sort numbers in descending order
+
+// Do NOT use default sort. Use numeric comparator.
+
+// Expected Output:
+// Ascending: [5, 10, 25, 40, 100]
+// Descending: [100, 40, 25, 10, 5]
+
+
+const numbers = [40, 5, 100, 25, 10];
+const ascnd =  [...numbers].sort((a,b)=>a-b);
+const descnd =  [...numbers].sort((a,b)=>b-a);
+console.log('Ascending:', ascnd);
+console.log('Descending:', descnd);
