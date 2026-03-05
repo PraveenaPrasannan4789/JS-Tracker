@@ -11,3 +11,5 @@ const user={
 
 console.log('user.department:',user.department);
 console.log('user.department.name',user.department.name);
+
+
