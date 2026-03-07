@@ -72,3 +72,41 @@ const myPromise4= new Promise((resolve,reject)=>{
 myPromise4.then(console.log)
 .catch(console.log)
 .finally(()=>{console.log('in finally')})
+
+
+
+
+//guess the output
+// Problem 1
+const p = new Promise((resolve, reject) => {
+    resolve("Success");
+});
+
+p.then(console.log);  //success
+
+
+//Problem 2
+const p2= new Promise((resolve, reject) => {
+    reject("Failed");
+});
+
+p2.catch(console.log); //Failed
+
+
+// Problem 3
+new Promise(resolve => {
+    setTimeout(() => resolve(100), 1000);
+}).then(console.log); //100 after 1 second
+
+
+//Problem 4
+
+const p3 = Promise.resolve(50);
+p3.then(x => x * 2)
+ .then(console.log); //100
+
+
+ //Problem 5
+Promise.reject("Error")
+    .catch(err => console.log(err))
+    .finally(() => console.log("Done"));//Error //done
