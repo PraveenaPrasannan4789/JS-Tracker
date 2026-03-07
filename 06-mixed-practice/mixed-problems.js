@@ -31,13 +31,41 @@ filteredUsers.map((x)=>{
     const {name}=x;
     names.push(name);
 })
+
 //another way 
 const newNames=[];
 filteredUsers.map((x)=>{
    newNames.push(Object.values(x)[0]);
 })
 
+//another way
+const result = users
+  .filter(user => user.age > 25)
+  .map(user => user.name);
 
-console.log('names',names,newNames)
+console.log('names',names,newNames,result)
 
+//problem 2
+//Object Destructuring (Nested)
+// const employee = {
+//   name: "Arun",
+//   department: {
+//     name: "Engineering",
+//     employees: 40
+//   }
+// };
 
+// Task
+
+// Destructure the object and print:
+
+// Arun works in Engineering department
+const employee = {
+  name: "Arun",
+  department: {
+    name: "Engineering",
+    employees: 40
+  }
+};
+const {name:emploeeName , department:{name:departmentName}}= employee;
+console.log(`${emploeeName} works in ${departmentName} department`)
