@@ -110,3 +110,6 @@ p3.then(x => x * 2)
 Promise.reject("Error")
     .catch(err => console.log(err))
     .finally(() => console.log("Done"));//Error //done
+
+
+ 
