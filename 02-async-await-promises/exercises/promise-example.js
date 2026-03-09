@@ -103,13 +103,13 @@ new Promise(resolve => {
 
 const p3 = Promise.resolve(50);
 p3.then(x => x * 2)
-//  .then(console.log); //100
+ .then(console.log); //100
 
 
-//  //Problem 5
-// Promise.reject("Error")
-//     .catch(err => console.log(err))
-//     .finally(() => console.log("Done"));//Error //done
+ //Problem 5
+Promise.reject("Error")
+    .catch(err => console.log(err))
+    .finally(() => console.log("Done"));//Error //done
 
 
  
