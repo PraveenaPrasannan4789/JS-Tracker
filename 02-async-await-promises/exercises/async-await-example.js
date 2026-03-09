@@ -27,9 +27,9 @@ printValue()
 // Exercise 3
 
 // Write an async function that waits 2 seconds then logs "Finished".
-async function printOutput(){
-    setTimeout(()=>{
-      console.log('finished')
-    },2000)
-};
-printOutput();
+// async function printOutput(){
+//     setTimeout(()=>{
+//       console.log('finished')
+//     },2000)
+// };
+// printOutput();
