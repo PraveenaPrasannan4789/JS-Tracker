@@ -36,3 +36,16 @@ function loopExample(){
     }
 }
 loopExample();
+
+//another  example closures with loop
+
+//closures with loop
+
+function loopExample1(){
+    for(var i=0;i<=3;i++){
+       setTimeout(function(){
+            console.log('inside closure with loop another example',i);
+        },5000)
+    }
+}
+loopExample1();
