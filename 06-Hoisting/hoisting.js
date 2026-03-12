@@ -8,15 +8,15 @@ a=5;
 
 
 
-// // let and const
-// // let and const are hoisted but NOT initialized.
-// console.log(b);// Cannot access 'b' before initialization
-// let b = 5; 
-// //javascript treats its as
-// let c;
-// console.log(c);// Cannot access 'b' before initialization
-// c = 5; 
-
+// let and const
+// let and const are hoisted but NOT initialized.
+//They stay in the Temporal Dead Zone (TDZ).
+console.log(b);// Cannot access 'b' before initialization
+let b = 5; 
+//javascript treats its as
+let c;
+console.log(c);// Cannot access 'b' before initialization
+c = 5; 
 
 
 
