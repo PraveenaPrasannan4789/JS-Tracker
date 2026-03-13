@@ -39,7 +39,39 @@ dataSet.sayHi();
 const dataNew = {
     employeeName:"rahul",
     greet:()=>{
-        console.log('inside dataNew function')
+        console.log('inside dataNew function',this.name)
     }
 }
 dataNew.greet();
+
+//arrow function fix
+const dataNew1= {
+employeeName:"rahul",
+    greet(){
+        const fix= ()=>{
+        console.log('inside dataNew function',this.employeeName)
+    }
+    fix();
+}
+}
+
+dataNew1.greet();
+
+
+//this with call()
+
+const dataNewSet = {
+    name:"alex",
+    age:24
+}
+
+function callFn(){
+    console.log('hi', this);
+}
+callFn.call(dataNewSet);
+
+
+
+//8. this with apply()
+
+// Same as call, but arguments are passed as an array.
