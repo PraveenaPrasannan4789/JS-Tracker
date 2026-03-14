@@ -87,6 +87,19 @@ console.log('x', arg)
 
 xPrint.apply(userData,[25])
 
+//this with bind()
+//bind() returns a new function with fixed this.
+function printName(){
+    console.log(this.name)
+}
+
+const person = {
+    name:"ali",
+    age: 34
+}
+
+const clFn= printName.bind(person);
+clFn();
 
 
 //this in Constructor Function
@@ -102,3 +115,15 @@ console.log('cons name ',cons.name)
 //button.addEventListener("click", function() {
 //  console.log(this);
 //});
+
+
+//Call-site determines this
+const userDataNew= {
+    userName:"user",
+    greet(){
+        console.log('in userDataNew',this.userName)
+    }
+}
+
+const user1 = userDataNew.greet;
+user1();//undefined
