@@ -127,3 +127,13 @@ const userDataNew= {
 
 const user1 = userDataNew.greet;
 user1();//undefined
+
+
+const person = {
+  name: "Alice",
+  greet: () => {
+    console.log(this.name);
+  }
+};
+
+person.greet();
