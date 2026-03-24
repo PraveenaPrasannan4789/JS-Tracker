@@ -40,3 +40,11 @@ sayHello1();
 var  sayHello1= function add(){ //sayHello is not a function
     console.log('add', 7);
 }
+
+
+//let and const Hoisting
+console.log(newVar); // ReferenceError: Cannot access 'newVar' before initialization
+let newVar = 20;
+
+console.log(newVar1); // ReferenceError: Cannot access 'newVar' before initialization
+const newVar1 = 30;
