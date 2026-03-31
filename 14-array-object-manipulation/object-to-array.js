@@ -32,7 +32,7 @@ console.log(objnew);
 const objnw = { a: 1, b: 2 };
 
 const swapped = Object.fromEntries(
-  Object.entries(objnw).map(([key, value]) => [value, key])
+  Object.entries(obj).map(([key, value]) => [value, key])
 );
 
 console.log(swapped);
