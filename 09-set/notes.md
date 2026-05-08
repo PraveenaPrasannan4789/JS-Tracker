@@ -35,3 +35,13 @@ set.add(value)      // add value
 set.has(value)      // check if exists (true/false)
 set.delete(value)   // remove value
 set.size            // number of elements
+
+summary
+Set is a built-in JavaScript object.
+It stores unique values only.
+Duplicate values are automatically removed.
+Values can be of any type:
+numbers
+strings
+objects
+arrays
