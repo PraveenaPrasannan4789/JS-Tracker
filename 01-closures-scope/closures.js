@@ -49,3 +49,17 @@ function loopExample1(){
     }
 }
 loopExample1();
+
+
+//another  example closures with loop
+
+//closures with loop
+
+function loopExample2(){
+    for(var i=0;i<=3;i++){
+       setTimeout(function(){
+            console.log('inside closure with loop another example 2',i);
+        },5000)
+    }
+}
+loopExample2();
