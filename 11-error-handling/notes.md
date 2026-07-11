@@ -67,3 +67,12 @@ Output:
 
 Caught: Oops!
 Finally always runs
+
+try {
+    console.log("Trying risky code");
+    throw new Error("Oops!");
+} catch (e) {
+    console.log("new error:", e.message);
+} finally {
+    console.log("always run this code");
+}
