@@ -38,3 +38,13 @@ getalternative([
   () => Promise.resolve("new done 1"),
   () => Promise.resolve("new done 2"),
 ]).then((res) => console.log(res));
+
+const data = Promise.all(
+  [() => Promise.resolve(1), () => Promise.resolve(2)].map((fn) => fn()),
+);
+
+data.then(console.log);
+
+Promise.all([Promise.resolve("OK"), Promise.reject("Error")]).catch(
+  console.log,
+);
