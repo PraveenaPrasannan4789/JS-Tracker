@@ -81,6 +81,13 @@ Is Call Stack empty?
 
 If YES → it pushes tasks from Callback Queue to Call Stack
 
+The Event Loop is the mechanism that allows JavaScript (which is single-threaded) to handle asynchronous operations like:
+
+API calls
+setTimeout
+Promises
+user events (click, input)
+
 Event Loop Flow
 Call Stack
    ↓
@@ -150,3 +157,20 @@ Call Stack
 Microtask Queue (Promises)
 ↓
 Callback Queue (Timers)
+
+## JavaScript is single-threaded, meaning it has only one call stack and executes one thing at a time.
+
+But how does it look like multi-threaded?
+
+Even though JS is single-threaded, it uses:
+
+Event Loop
+Web APIs (browser)
+Callback Queue / Task Queue
+Microtask Queue (Promises)
+
+This allows it to handle multiple tasks like:
+
+API calls
+Timers (setTimeout)
+File operations (Node.js)
