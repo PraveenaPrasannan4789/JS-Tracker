@@ -27,3 +27,9 @@ obj1.greet(); // undefined (or window.name)
 const arrowExample = () => {
   console.log("example of arrow function");
 };
+
+const exampleOfArrowFn = () => {
+  console.log("i am inside new example of arrow function");
+};
+
+exampleOfArrowFn();
