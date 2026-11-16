@@ -22,3 +22,11 @@ numb.forEach((x)=>{
     n+=x;
 })
 console.log('modified value', n)
+
+//modify external variable another example
+let numb1=[2,5,7];
+let m=80;
+numb1.forEach((x)=>{
+    m+=x;
+})
+console.log('modified value', m)
