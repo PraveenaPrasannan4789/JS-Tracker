@@ -30,3 +30,8 @@ console.log('eligible',eligible)
 let matches=['mumbai','agra'];
 let res= matches.find((x)=>x.length>9)
 console.log('result',res)
+
+//no match scenario example 2
+let matches1=['mumbai','agra'];
+let res1= matches1.find((x)=>x.length>9)
+console.log('result',res1)
