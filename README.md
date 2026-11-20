@@ -20,4 +20,5 @@ To build strong fundamentals and demonstrate consistent learning.
 
 ## Next Steps
 - React projects
+- Js folder
 
