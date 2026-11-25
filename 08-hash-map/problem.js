@@ -17,3 +17,13 @@ const obj = {
 
 console.log('name', obj["name"]);
 console.log('age', obj["age"]);
+
+//plain object example 2
+
+const object2= {
+    name:"praveena1",
+    age:25
+}
+
+console.log('name', object2["name"]);
+console.log('age', object2["age"]);
